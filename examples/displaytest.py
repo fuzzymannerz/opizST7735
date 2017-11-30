@@ -1,10 +1,13 @@
-# Python ST7735 library for Raspberry Pi
+# Python ST7735 library for Orange Pi Zero
 # Display Test
-# Copyright 2017 jackw01
+# Copyright 2017 jackw01 / FuzzyTek
 # Distributed under the MIT license
 
 # Import modules
-import RPi.GPIO as GPIO
+import OPi.GPIO as GPIO
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+
 from ST7735 import *
 import time
 
@@ -17,10 +20,6 @@ from ST7735.fonts.font7x10 import *
 pinDataCommand = 22
 
 # Main Program
-
-GPIO.setmode(GPIO.BCM)
-GPIO.setwarnings(False)
-
 display = ST7735.ST7735(128, 128, pinDataCommand)
 
 display.clearScreen()
