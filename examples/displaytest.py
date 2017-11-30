@@ -5,7 +5,7 @@
 
 # Import modules
 import OPi.GPIO as GPIO
-GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.BOARD)
 GPIO.setwarnings(False)
 
 from ST7735 import *
@@ -17,7 +17,7 @@ from ST7735.fonts.font5x7 import *
 from ST7735.fonts.font7x10 import *
 
 # Pins
-pinDataCommand = 22
+pinDataCommand = 16
 
 # Main Program
 display = ST7735.ST7735(128, 128, pinDataCommand)
