@@ -3,7 +3,7 @@
 # Distributed under the MIT license
 
 # Imports
-import RPi.GPIO as GPIO
+import OPi.GPIO as GPIO
 from PIL import Image
 import time, math, spidev, copy
 
@@ -87,10 +87,10 @@ class ST7735(object):
 
         self.framebuffer = []
 
-        for x in range(self.widthh + 1):
+        for x in range(self.width + 1):
             array = []
 
-            for y in range(self.heighth + 1):
+            for y in range(self.height + 1):
                 array.append(0)
 
             self.framebuffer.append(array)
