@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# Python ST7735 library for Raspberry Pi
+# Python ST7735 library for Orange Pi Zero
 # 4x5 pixel bitmap font
-# Copyright 2016-2017 jackw01
+# Copyright 2016-2017 jackw01 / FuzzyTek
 # Distributed under the MIT license
 
 font4x5 = {
